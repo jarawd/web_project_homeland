@@ -46,13 +46,13 @@
   align-self: flex-end;
 }
 
-.place__artist_item {
+.place__artist-item {
   margin: 0;
   font-size: 18px;
   line-height: 22px;
 }
 
-.place__artist_item_uppercase {
+.place__artist-item_uppercase {
   text-transform: uppercase;
   color: #AAA;
   font-size: 12px;
@@ -99,27 +99,27 @@
   line-height: 29.34px;
 }
 
-.place__description_item {
+.place__description-item {
   margin: 0;
 }
 
-.place__description_item_uk {
+.place__description-item_uk {
   margin-bottom: 25px;
 }
 
-.place__description_item_ga {
+.place__description-item_ga {
   margin-bottom: 56px;
 }
 
-.place__description_item_us {
+.place__description-item_us {
   margin-bottom: 17px;
 }
 
-.place__description_item_bu {
+.place__description-item_bu {
   margin-bottom: 25px;
 }
 
-.place__description_item_mx {
+.place__description-item_mx {
   margin-bottom: 25px;
 }
 
@@ -183,23 +183,23 @@
     margin-bottom: 41px;
   }
 
-  .place__description_item_uk {
+  .place__description-item_uk {
     margin-bottom: 14px;
   }
 
-  .place__description_item_ga {
+  .place__description-item_ga {
     margin-bottom: 25px;
   }
 
-  .place__description_item_us {
+  .place__description-item_us {
     margin-bottom: 20px;
   }
 
-  .place__description_item_bu {
+  .place__description-item_bu {
     margin-bottom: 11px;
   }
 
-  .place__description_item_mx {
+  .place__description-item_mx {
     margin-bottom: 11px;
   }
 }
@@ -270,23 +270,23 @@
     margin-bottom: 50px;
   }
 
-  .place__description_item_uk {
+  .place__description-item_uk {
     margin-bottom: 7px;
   }
 
-  .place__description_item_ga {
+  .place__description-item_ga {
     margin-bottom: 10px;
   }
 
-  .place__description_item_us {
+  .place__description-item_us {
     margin-bottom: 0;
   }
 
-  .place__description_item_bu {
+  .place__description-item_bu {
     margin-bottom: 25px;
   }
 
-  .place__description_item_mx {
+  .place__description-item_mx {
     margin-bottom: 25px;
   }
 
