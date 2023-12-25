@@ -1,0 +1,301 @@
+.places {
+  margin: 0 auto;
+}
+
+.place {
+  margin: 0 148px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "title artist"
+    "image description"
+    "link description";
+  column-gap: 40px;
+}
+
+.place_uk {
+  margin-bottom: 80px;
+}
+
+.place_ga {
+  margin-bottom: 35px;
+}
+
+.place_us {
+  margin-bottom: 80px;
+}
+
+.place_bu {
+  margin-bottom: 51px;
+}
+
+.place_mx {
+  margin-bottom: 92px;
+}
+
+.place__title {
+  grid-area: title;
+  margin: 0;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 76px;
+}
+
+.place__artist {
+  grid-area: artist;
+  align-self: flex-end;
+}
+
+.place__artist_item {
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.place__artist_item_uppercase {
+  text-transform: uppercase;
+  color: #AAA;
+  font-size: 12px;
+  line-height: 14.52px;
+  margin-bottom: 8px;
+}
+
+.place__image-container {
+  width: 100%;
+  margin: 48px 0;
+  grid-area: image;
+  overflow: hidden;
+}
+
+.place__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.place__link {
+  grid-area: link;
+  max-width: 315px;
+  max-height: 48px;
+  border-radius: 4px;
+  padding: 13px 20px;
+  background-color: #0278FE;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.place__link:hover {
+  background-color: #0063d2;
+}
+
+.place__description {
+  grid-area: description;
+  margin-top: 48px;
+  max-width: 484px;
+  font-size: 18px;
+  line-height: 29.34px;
+}
+
+.place__description_item {
+  margin: 0;
+}
+
+.place__description_item_uk {
+  margin-bottom: 25px;
+}
+
+.place__description_item_ga {
+  margin-bottom: 56px;
+}
+
+.place__description_item_us {
+  margin-bottom: 17px;
+}
+
+.place__description_item_bu {
+  margin-bottom: 25px;
+}
+
+.place__description_item_mx {
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+  .place {
+    margin: 0 50px;
+  }
+
+  .place__link {
+    max-height: 30px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    padding-bottom: 92px;
+  }
+
+  .place {
+    margin-left: 24px;
+    margin-right: 24px;
+    grid-template-rows: 92px 340px 1fr;
+    row-gap: 48px;
+  }
+
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
+    align-self: flex-end;
+  }
+
+  .place__description {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .place__image-container {
+    margin: 0;
+  }
+
+  .place__link {
+    max-width: 315px;
+    padding: 13px 10px;
+    line-height: 18px;
+  }
+
+  .place_uk {
+    margin-bottom: 31px;
+  }
+
+  .place_ga {
+    margin-bottom: 46px;
+  }
+
+  .place_us {
+    margin-bottom: 25px;
+  }
+
+  .place_bu {
+    margin-bottom: 41px;
+  }
+
+  .place__description_item_uk {
+    margin-bottom: 14px;
+  }
+
+  .place__description_item_ga {
+    margin-bottom: 25px;
+  }
+
+  .place__description_item_us {
+    margin-bottom: 20px;
+  }
+
+  .place__description_item_bu {
+    margin-bottom: 11px;
+  }
+
+  .place__description_item_mx {
+    margin-bottom: 11px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .place {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .place__title,
+  .place__artist,
+  .place__image {
+    align-self: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .place__link {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .places {
+    padding-bottom: 64px;
+  }
+
+  .place {
+    margin: 0;
+  }
+
+  .place__title {
+    align-self: flex-start;
+    font-size: 32px;
+    line-height: 35px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 30px;
+  }
+
+  .place__artist {
+    margin-bottom: 30px;
+    align-self: flex-start;
+  }
+
+  .place__title,
+  .place__artist,
+  .place__description,
+  .place__link {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .place_uk {
+    margin-bottom: 16px;
+  }
+
+  .place_ga {
+    margin-bottom: 36px;
+  }
+
+  .place_us {
+    margin-bottom: 17px;
+  }
+
+  .place_bu {
+    margin-bottom: 50px;
+  }
+
+  .place__description_item_uk {
+    margin-bottom: 7px;
+  }
+
+  .place__description_item_ga {
+    margin-bottom: 10px;
+  }
+
+  .place__description_item_us {
+    margin-bottom: 0;
+  }
+
+  .place__description_item_bu {
+    margin-bottom: 25px;
+  }
+
+  .place__description_item_mx {
+    margin-bottom: 25px;
+  }
+
+  .place__link {
+    max-width: 288px;
+    max-height: 48px;
+    margin: auto;
+    font-size: 14px;
+    line-height: 16.94px;
+    text-align: center;
+  }
+}

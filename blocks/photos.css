@@ -1,0 +1,32 @@
+.photos {
+  max-width: 92.5%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-bottom: 92px;
+  text-align: center;
+}
+
+.photos__item {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .photos {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 88px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .photos {
+    display: block;
+    margin: 0;
+    padding: 0 16px 62px;
+  }
+
+  .photos__item:not(:last-of-type) {
+    margin-bottom: 12px;
+  }
+}
